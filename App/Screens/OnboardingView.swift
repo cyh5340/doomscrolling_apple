@@ -194,7 +194,8 @@ struct OnboardingView: View {
                 Tracking.shared.refreshStatus()
                 step = Tracking.shared.authorized ? .apps : .screenTime
             } catch {
-                self.error = "Couldn't sign in. Check your connection and try again."
+                // The server's reason (e.g. "Anonymous sign-ins are disabled") says whether it's the network or setup.
+                self.error = "Couldn't sign in: \(error.localizedDescription)"
             }
         }
     }
