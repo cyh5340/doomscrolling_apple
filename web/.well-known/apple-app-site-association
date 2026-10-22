@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["REPLACE_WITH_TEAM_ID.com.doomscroll.app"],
+        "components": [{ "/": "/join/*", "comment": "Invite links: https://<inviteHost>/join/{code}" }]
+      }
+    ]
+  }
+}

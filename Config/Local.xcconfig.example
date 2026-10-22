@@ -1,0 +1,8 @@
+// Copy to Config/Local.xcconfig (git-ignored) and fill in.
+SUPABASE_URL = https:/$()/<ref>.supabase.co
+SUPABASE_KEY = <publishable key from: npx supabase projects api-keys --project-ref <ref>>
+INVITE_HOST = <your invite domain>
+DEVELOPMENT_TEAM = <your Apple team ID>
+// If com.doomscroll is taken in your team, change both:
+// BUNDLE_ID_PREFIX = com.yourname.doomscroll
+// APP_GROUP = group.com.yourname.doomscroll
